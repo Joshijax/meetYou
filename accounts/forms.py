@@ -29,9 +29,9 @@ class SignUpForm(UserCreationForm):
         fields = ('first_name', 'last_name','username' , 'email', 'password1', 'password2', )
 
     def clean(self):
-    data = self.cleaned_data
-    if "password1" in data and "password2" in data:
-        if data["password1"] != data["password2"]:
-            self._errors["password2"] = self.error_class(['Passwords do not match.'])
-            del data['password2']    
-    return data
+            data = self.cleaned_data
+            if "password1" in data and "password2" in data:
+                if data["password1"] != data["password2"]:
+                    self._errors["password2"] = self.error_class(['Passwords do not match.'])
+                    del data['password2']    
+            return data

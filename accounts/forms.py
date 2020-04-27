@@ -30,7 +30,7 @@ class SignUpForm(UserCreationForm):
 
     def save(self):
         user = User(
-            email=self.validated_data['email'],
+            
             username=self.validated_data['username'],
         )
         password1 = self.validated_data['password1']

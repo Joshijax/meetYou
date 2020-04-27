@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<style>
+                body {
+                background: url(../img/bg.png) center no-repeat;
+                background-size: cover;
+                background-color: #b9c1d4;
+                margin: 0;
+                padding: 3vh 0;
+                font-family: 'Roboto', sans-serif; }
+
+               
+
+
+
+
+.message-box__item {
+                    margin-bottom: 15px; }
+                     .message-box__item.incoming {
+                        text-align: left; }
+                        .message-box__item.incoming .time {
+                        right: 0; }
+                     .message-box__item.outgoing {
+                        text-align: right; }
+                        .message-box__item.outgoing .time {
+                        left: 0; }
+                     .message-box__item .name {
+                        color: #535357;
+                        font-size: 16px;
+                        font-weight: 400; }
+                    .message-box__item .box-text {
+                        background: #28a7ab;
+                        display: inline-block;
+                        padding: 15px 10px;
+                        padding-right: 50px;
+                        font-size: 16px;
+                        color: #535357;
+                        border-radius: 7px;
+                        max-width: 70%;
+                        margin-top: 10px;
+                        text-align: left;
+                        position: relative;
+                        margin-bottom: 20px; }
+                        .message-box__item .box-text .time {
+                        position: absolute;
+                        bottom: -25px;
+                        font-size: 13px;
+                        color: #939397; }
+
+</style>
+</head>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+{% block content %}
+{% comment %} <div id="wrapper">
+        <div class="sidebar">
+            <div class="profile-img">
+                <img src="http://muhammederdem.com.tr/imagesrdm/profile.jpg" alt="">
+            </div>
+
+            <ul class="sidebar-menu">
+                <li><a href="#" class="sidebar-menu__links active"><img src="http://muhammederdem.com.tr/sms/img/inbox.png" alt=""></a></li>
+                <li><a href="#" class="sidebar-menu__links"><img src="http://muhammederdem.com.tr/sms/img/send.png" alt=""></a></li>
+                <li><a href="#" class="sidebar-menu__links"><img src="http://muhammederdem.com.tr/sms/img/draft.png" alt=""></a></li>
+                <li><a href="#" class="sidebar-menu__links"><img src="http://muhammederdem.com.tr/sms/img/trash.png" alt=""></a></li>
+            </ul>
+
+            <a href="#" class="btn-menu"><img src="img/menu.png" alt=""></a>
+        </div>
+<div class="messages">
+
+            <div class="seacrh-bar">
+
+                <img src="img/search.png" alt="">
+                <input type="text" placeholder="Search">
+
+            </div>
+
+            <a href="#" class="messages__item">
+                    <div class="name">
+                        Muhammed ERDEM
+                    </div>
+                    <div class="date">
+                        1h ago
+                    </div>
+
+                    <div class="content">
+                        Currently We are looking for a UI designer to work on our websites and mobile application...
+                    </div>
+            </a>
+
+            <a href="#" class="messages__item unread">
+                    <div class="name">
+                        Muhammed ERDEM
+                    </div>
+                    <div class="date">
+                        1h ago
+                    </div>
+
+                    <div class="content">
+                        Currently We are looking for a UI designer to work on our websites and mobile application...
+                    </div>
+            </a>
+
+            <a href="#" class="messages__item">
+                    <div class="name">
+                        Muhammed ERDEM
+                    </div>
+                    <div class="date">
+                        1h ago
+                    </div>
+
+                    <div class="content">
+                        Currently We are looking for a UI designer to work on our websites and mobile application...
+                    </div>
+            </a>
+
+            <a href="#" class="messages__item">
+                    <div class="name">
+                        Muhammed ERDEM
+                    </div>
+                    <div class="date">
+                        1h ago
+                    </div>
+
+                    <div class="content">
+                        Currently We are looking for a UI designer to work on our websites and mobile application...
+                    </div>
+            </a>
+
+            <a href="#" class="messages__item active">
+                    <div class="name">
+                        Muhammed ERDEM
+                    </div>
+                    <div class="date">
+                        1h ago
+                    </div>
+
+                    <div class="content">
+                        Currently We are looking for a UI designer to work on our websites and mobile application...
+                    </div>
+            </a>
+
+
+        </div> 
+
+        <div class="message-content">
+
+            <div class="message-content__item">
+                <div class="message-content-header">
+                    <div class="name">Muhammed ERDEM</div>
+                    <div class="phone">+90 507 047 3099</div>
+                    <img src="img/message-more.png" alt="">
+                </div>
+            </div>
+
+            <div class="message-box">
+                <div class="message-box__item incoming">
+                    <div class="name">Muhammed ERDEM</div>
+
+                    <div class="box-text">
+                        Hey man!
+
+                        <div class="time">18:36</div>
+                    </div>
+                </div>
+
+                <div class="message-box__item outgoing">
+
+                    <div class="box-text">
+                            Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir
+
+                        <div class="time">18:36</div>
+                    </div>
+                </div>
+
+                <div class="message-box__item outgoing">
+
+                    <div class="box-text">
+                        Currently We are looking for a UI designer to work on our websites and mobile application.
+
+                        <div class="time">18:36</div>
+                    </div>
+                </div>
+
+                <div class="message-box__item incoming">
+                    <div class="name">Muhammed ERDEM</div>
+
+                    <div class="box-text">
+                            Currently We are looking
+
+                        <div class="time">18:36</div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="message-form">
+                <input type="text" placeholder="Type your message here">
+                <img src="img/submit.png" alt="">
+            </div>
+
+        </div>
+        
+    </div> {% endcomment %} 
+
+
+
+<div style="margin: auto;" class="row" onload="ajax();">
+
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4 col-12" style="background-color: #f5f5f5;margin: 0px 10px;border-radius: 4px; padding: 10px 20px 20px 20px;">
+        <div style="text-align: center;font-size: 18px;background-color: #ddd;border-radius: 4px;color: #5e5fa4;margin-bottom: 8px;">
+            <span>Users Chart</span>
+        </div>
+        <ul class="list-group">
+           {% for users  in users %}
+           {% if users.username != request.user.username %}
+           {% if users.username == Theuser %}
+                    <a href="{% url 'message' users.username %}">
+                     <li class="list-group-item" style="background-color:#28a7ab;">{{ users }} 
+                            {% if users.status.status %}
+                            <span style="height: 12px;width: 12px;background-color: #1fc124;border-radius: 6px;
+                            float: right;margin-top: 5px;"></span>
+                            {% else %}
+                            <span style="height: 12px;width: 12px;background-color: #8a8a8a;border-radius: 6px;
+                            float: right;margin-top: 5px;"></span>
+                        
+                        {% endif %}
+                        </li>
+                        </a>
+                    {% else %}
+                    <a href="{% url 'message' users.username %}"> 
+                        <li class="list-group-item">{{ users }} 
+                                {% if users.is_active %}
+                                <span style="height: 12px;width: 12px;background-color: #1fc124;border-radius: 6px;
+                                float: right;margin-top: 5px;"></span>
+                                {% else %}
+                                <span style="height: 12px;width: 12px;background-color: #8a8a8a;border-radius: 6px;
+                                float: right;margin-top: 5px;"></span>
+                        
+                    {% endif %}
+                    </li>
+                    </a>
+                {% endif %}
+            {% endif %}
+           {% endfor %}
+        </ul>
+    </div>
+    <hr>
+    <div class="col-sm-6 col-12" style="background-color: #f5f5f5;margin: 0px 10px;border-radius: 4px; padding: 10px 20px 20px 20px;">
+
+
+                <div style="text-align: center;font-size: 18px; color: #22aa45;background-color: #ddd;border-radius: 4px;">
+                    <span></span>
+                </div>
+                <div id="chat-box" style="overflow-y: scroll; height: 350px; padding: 10px 0px 0px 0px;">
+                {% for chat in chat.all %}
+                {% if chat.user == request.user%}
+                                <div class="message-box__item outgoing">
+                    <div class="name">Me</div>
+
+                    <div class="box-text">
+                        {{ chat.message }}
+
+                        <div class="time">{{ chat.timestamp|date:"D  H : s" }}</div>
+                    </div>
+                </div>
+                    {% comment %} <div class="" style="text-align:right; padding:2px 5px;">
+                        
+
+                        <p>
+                            <span class="" style="background-color: #28a7ab;color: #fff;margin: 1px 0;padding: 6px 12px; border-radius: 12px;">{{ chat.message }}</span>
+                        </p>
+
+                            
+                        
+                    </div> {% endcomment %}
+                    {% else %}
+                    <div class="message-box__item  incoming">
+                    <div class="name">{{ chat.username }}</div>
+
+                    <div class="box-text">
+                        {{ chat.message }}
+
+                        <div class="time">{{ chat.timestamp|date:"D  H : s" }}</div>
+                    </div>
+                </div>
+
+                    {% comment %} <div class="" style="text-align:left; padding:2px 5px;">
+                        
+
+                        <p>
+                            <span class="" style="background-color: #28a7ab;color: #fff;margin: 1px 0;padding: 6px 12px; border-radius: 12px;">{{ chat.message }}</span>
+                        </p>
+
+                            
+                        
+                    </div> {% endcomment %}
+
+                    {% endif %}
+                    {% endfor %}
+                
+                </div>
+               
+                <div>
+                    <form id="form" method="POST">
+                     {% csrf_token %}
+                    <div class="form-group">
+                        {{form.as_p }}
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+    <div class="col-sm-1"></div>
+    
+</div>
+{% endblock %}
+<script>
+
+
+$(document).ready(function () {
+        $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.js"></script>
+{% block script %}
+
+<script>
+// websocket scripts
+console.log(window.location)
+var formData = $("#form")
+var inputMsg = $("#id_message")
+var loc = window.location
+var chatHolder = $('#chat-box')
+var wsStart = 'ws://' 
+if (loc.protocol  == 'https:'){
+    wsStart = 'wss://'
+}
+
+
+var endpoint = wsStart + loc.host + loc.pathname
+var socket = new ReconnectingWebSocket(endpoint)
+var Userr = "{{ request.user.username}}"
+
+socket.onmessage = function(e){
+    console.log("message", e)
+    var chatData = JSON.parse(e.data)
+    console.log(chatData)
+    if (Userr == chatData.username ){
+        chatHolder.append('<div autofocus class="message-box__item outgoing"><div class="name">{{ chat.username }}</div><div class="box-text">'+ chatData.message +'<div class="time">18:36</div></div></div>').focus()
+        $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+    }else{
+        chatHolder.append(
+        '<div autofocus class="message-box__item incoming"><div class="name">{{ chat.username }}</div><div class="box-text">'+ chatData.message +'<div class="time">18:36</div></div></div>'
+        ).focus()
+        $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+
+    }
+    
+}
+
+socket.onopen = function(e){
+    console.log("message", e) 
+    formData.submit(function(event){
+        event.preventDefault()
+        var msgText = inputMsg.val()
+        var finalData = {
+            'message' : msgText
+        }
+        socket.send(JSON.stringify(finalData))
+        formData[0].reset()
+
+        
+    })
+}
+
+socket.onerror = function(e){
+    console.log("message", e)
+}
+
+
+socket.onclose = function(e){
+    console.log("message", e)
+}
+ 
+</script>
+{% endblock %}
+</html>
